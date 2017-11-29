@@ -1,5 +1,5 @@
 {
-  "name": "tslint-nbs",
+  "name": "tslint-config-nbs",
   "description": "A TSLint config for NBS JavaScript Style",
   "version": "5.4.3",
   "author": "nbs",
