@@ -1,14 +1,13 @@
-# TSLint Config Airbnb
-
-[![NPM version](https://img.shields.io/npm/v/tslint-config-airbnb.svg?style=flat)](https://www.npmjs.com/package/tslint-config-airbnb)
-[![Downloads](http://img.shields.io/npm/dm/tslint-config-airbnb.svg?style=flat)](https://npmjs.org/package/tslint-config-airbnb)
+# TSLint Config NBS
 
 > A [TSLint config](https://palantir.github.io/tslint/usage/tslint-json/) for [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+>
+> Based on https://github.com/progre/tslint-config-airbnb
 
 ## Installation
 
 ```sh
-npm install tslint-config-airbnb --save
+npm install tslint-config-nbs --save
 ```
 
 ## Usage
@@ -17,7 +16,7 @@ In `tslint.json`:
 
 ```json
 {
-  "extends": "tslint-config-airbnb"
+  "extends": "tslint-config-nbs"
 }
 ```
 
