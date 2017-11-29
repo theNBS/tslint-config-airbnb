@@ -1,7 +1,7 @@
 {
   "name": "tslint-nbs",
   "description": "A TSLint config for NBS JavaScript Style",
-  "version": "5.0.0",
+  "version": "5.4.3",
   "author": "nbs",
   "bugs": {
     "url": "https://github.com/theNBS/tslint-config-airbnb/issues"
