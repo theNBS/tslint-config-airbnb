@@ -138,7 +138,7 @@ module.exports = {
     'no-switch-case-fall-through': true,
     'no-trailing-whitespace': true,
     'no-unused-expression': true,
-    'no-unused-variable': [true, 'react'],
+    'no-unused-variable': false, // 5.4.4
     'no-use-before-declare': true,
     'no-var-requires': true,
     'object-shorthand-properties-first': false,
