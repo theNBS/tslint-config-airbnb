@@ -186,5 +186,6 @@ module.exports = {
     ],
     'no-boolean-literal-compare': false,
     'strict-boolean-expressions': false,
+    'deprecation': true, // 5.4.4
   },
 }
