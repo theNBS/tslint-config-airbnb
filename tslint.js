@@ -138,7 +138,7 @@ module.exports = {
     'no-switch-case-fall-through': true,
     'no-trailing-whitespace': true,
     'no-unused-expression': true,
-    'no-unused-variable': true, // 5.4.6
+    "no-unused-variable": [true, { 'ignore-pattern': '^_' }], // 5.4.7
     'no-use-before-declare': true,
     'no-var-requires': true,
     'object-shorthand-properties-first': false,
