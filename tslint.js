@@ -107,7 +107,7 @@ module.exports = {
     'label-position': true,
     'max-line-length': [
       true,
-      120,
+      180,
     ],
     'member-ordering': [
       true,
