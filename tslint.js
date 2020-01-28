@@ -109,12 +109,6 @@ module.exports = {
       true,
       180,
     ],
-    'member-ordering': [
-      true,
-      'public-before-private',
-      'static-before-instance',
-      'variables-before-functions',
-    ],
     'no-any': false,
     'no-arg': true,
     'no-bitwise': true,
@@ -138,7 +132,7 @@ module.exports = {
     'no-switch-case-fall-through': true,
     'no-trailing-whitespace': true,
     'no-unused-expression': true,
-    "no-unused-variable": [true, { 'ignore-pattern': '^_' }], // 5.4.7
+    'no-unused-variable': [true, { 'ignore-pattern': '^_' }], // 5.4.7
     'no-use-before-declare': true,
     'no-var-requires': true,
     'object-shorthand-properties-first': false,
@@ -186,6 +180,74 @@ module.exports = {
     ],
     'no-boolean-literal-compare': false,
     'strict-boolean-expressions': false,
-    'deprecation': true, // 5.4.4
+    'deprecation': { 'severity': 'warning' },
+    'member-ordering': [
+      true,
+      {
+        'order': [
+          {
+            'name': 'public static field',
+            'kinds': [
+              'public-static-field',
+              'protected-static-field',
+            ],
+          },
+          {
+            'name': 'private static field',
+            'kinds': [
+              'private-static-field',
+            ],
+          },
+          {
+            'name': 'public instance field',
+            'kinds': [
+              'public-instance-field',
+              'protected-instance-field',
+            ],
+          },
+          {
+            'name': 'private instance field',
+            'kinds': [
+              'private-instance-field',
+            ],
+          },
+          {
+            'name': 'public static method',
+            'kinds': [
+              'public-static-method',
+              'protected-static-method',
+              'public-static-accessor',
+              'protected-static-accessor',
+            ],
+          },
+          {
+            'name': 'private static method',
+            'kinds': [
+              'private-static-method',
+              'private-static-accessor',
+            ],
+          },
+          {
+            'name': 'public instance method',
+            'kinds': [
+              'public-constructor',
+              'protected-constructor',
+              'public-instance-method',
+              'protected-instance-method',
+              'public-instance-accessor',
+              'protected-instance-accessor',
+            ],
+          },
+          {
+            'name': 'private instance method',
+            'kinds': [
+              'private-constructor',
+              'private-instance-method',
+              'private-instance-accessor',
+            ],
+          },
+        ],
+      },
+    ],
   },
 }
